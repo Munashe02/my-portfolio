@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Munashe L. Gwaze | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 60px 10%;
+      flex-wrap: wrap;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    header .intro {
+      max-width: 600px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    section {
+      padding: 60px 10%;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0d6efd;
+    }
+
+    .skills, .education, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .cta {
+      background: #0d6efd;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background: #084298;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="intro">
+      <h1>Munashe L. Gwaze</h1>
+      <p>Aspiring and Emerging Tech Visionary | Turning Vision into Reality with Code & Creativity</p>
+    </div>
+    <!-- Replace with your real photo -->
+    <img src="C:\Users\USER\Desktop\my portfolio\assets\Screenshot_20241126_211413.jpg" alt="Munashe's Photo">
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a fiercely passionate developer on a quest to become the most impactful technologist of my generation.Armed with hands-on experience in Python,C++, and web technologies(HTML,CSS,JavaScript) i believe i can become it.Fueled by curiosity and clarity, i'm constantly learning,experimenting, and pushing boundaries.I am highly adaptable, a fast learner, and driven by by a deep belief that <strong>"if it can be conceived,it can be coded into exixstance!!"</strong></p>
+    
+    <!-- Resume Download Button -->
+    <a href="C:\Users\USER\Desktop\my portfolio\assets\resume.pdf" class="cta" download>📄 Download Resume</a>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">✔️ HTML, CSS, JavaScript</div>
+      <div class="card">✔️ Python (Flask & Basics of AI)</div>
+      <div class="card">✔️ C++ (Strong fundamentals)</div>
+      <div class="card">✔️ Git & Version Control</div>
+      <div class="card">✔️ Database Systems (MySQL, PostgreSQL)</div>
+      <div class="card">✔️ Problem Solving & Debugging</div>
+    </div>
+  </section>
+<section>
+
+<   <h2>Academic Qualifications</h2>
+
+<div class="education">
+<div class="card">
+        <h3>ABMA Professional Computing & IS</h3>
+        <p>Level 5 Dploma (current)</p>
+      </div>
+    
+      <div class="card">
+        <h3>ABMA Professional Computing & IS</h3>
+        <p>Level 4 Diploma (2025)</p>
+      </div>
+      <div class="card">
+        <h3>ABMA Professional Computing & IS</h3>
+        <p>Level 3 Certificate (2024)</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Prophet AI</h3>
+        <p>An intelligent chatbot blending AI with biblical wisdom for inspiration and guidance.</p>
+        <a href="#" class="cta">View Project</a>
+      </div>
+      <div class="card">
+        <h3>Buttercup Brand Tracker</h3>
+        <p>A merchandising tool for monitoring brand performance and visibility across campaigns.</p>
+        <a href="#" class="cta">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <p>If you’re looking for a creative and dedicated full-stack developer, let’s connect!</p>
+    <a href="mailto:gwazemunashe02@gmail.com" class="cta">Email Me</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Munashe L. Gwaze | Built with passion 💻
+  </footer>
+
+</body>
+</html>
